@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center border-bottom border-4 border-success mb-4">
+            <h1 class="fw-bold">Pilih Produk Anda</h1>
+            <p>Kualitas Terbaik Biji Kopi Pilihan, Fresh Langsung Diambil dari Petani.</p>
+        </div>
+        <select class="form-select mb-4" name="select_kopi" id="select_kopi">
+            <option selected disabled>Pilih Jenis Kopi</option>
+            <option value="arabica">Arabica</option>
+            <option value="robusta">Robusta</option>
+        </select>
+        <div id="baris_produk" class="row"></div>
+    </div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        select_kopi.onchange = function () {
+            baris_produk.innerHTML = ""
+            var pilihan = this.value
+            if (pilihan == "arabica") {
+                var produk_pilihan = "arabica"
+            } else {
+                var produk_pilihan = "robusta"
+            }
+            $.get(produk_pilihan + ".json").then(function (respon) {
+                respon.forEach(element => {
+                    var produk = `
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="${element.foto}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-center">
+                                    ${element.nama} <span class="badge bg-danger">Promo</span>
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div>${element.size}</div>
+                                    <div>
+                                        <div class="text-decoration-line-through text-danger">${element.harga}</div>
+                                        <div>${element.promo}</div>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <a href="${element.link}" class="btn btn-success" type="button">BELI</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`
+                    baris_produk.innerHTML += produk
+                })
+            })
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+[
+    {
+        "foto": "images/produk/product_kopi_susu.jpg",
+        "nama": "Kopi Susu",
+        "size": "100 gram",
+        "harga": "120.000",
+        "promo": "110.000",
+        "link": "https://tokopedia.com/"
+    },
+    {
+        "foto": "images/produk/product_latte.jpg",
+        "nama": "Latte",
+        "size": "100 gram",
+        "harga": "100.000",
+        "promo": "90.000",
+        "link": "https://tokopedia.com/"
+    }
+]
