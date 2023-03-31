@@ -7,189 +7,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Kopi Kuy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav>
-        <div class="baris">
-            <img src="images/logo/logo_kuy.png" alt="logo kopi kuy" class="logo">
-            <ul class="navigasi">
-                <li>
-                    <a href="#best-seller">Best Seller</a>
-                </li>
-                <li>
-                    <a href="#our-team">Our Team</a>
-                </li>
-                <li>
-                    <a href="#review">Review</a>
-                </li>
-                <li>
-                    <a href="#contact-us">Contact Us</a>
-                </li>
-                <li>
-                    <a href="produk.html">Produk</a>
-                </li>
-            </ul>
-            <a class="chat" href="https://wa.me/">Chat</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo/logo_kuy.png" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produk.html">Produk</a>
+                    </li>
+                </ul>
+                <button class="btn btn-success">Chat</button>
+            </div>
         </div>
     </nav>
     <header>
-        <div class="baris">
-            <div class="kiri">
-                <h1>Kopi Kuy <img src="images/icon/icon_kopi.svg" alt=""></h1>
-                <p class="tagline">
-                    Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan high quality coffee untuk para
-                    pelanggannya.
-                </p>
-                <div class="cta">
-                    <p>Dapat dibeli melalui</p>
-                    <a href="#">
-                        <img src="images/logo/logo_bukalapak.png" alt="">
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h2>Kopi Kuy <img src="images/icon/icon_kopi.svg"></h2>
+                <p>Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan high quality coffee untuk para
+                    pelanggannya.</p>
+                <div>
+                    <p>Dapat dibeli melalui : </p>
+                    <a href="#" class="text-decoration-none">
+                        <img src="images/logo/logo_bukalapak.png" width="40">
                     </a>
-                    <a href="#">
-                        <img src="images/logo/logo_tokopedia.png" alt="">
+                    <a href="#" class="text-decoration-none">
+                        <img src="images/logo/logo_tokopedia.png" width="40">
                     </a>
-                    <a href="#">
-                        <img src="images/logo/logo_shopee.png" alt="">
+                    <a href="#" class="text-decoration-none">
+                        <img src="images/logo/logo_shopee.png" width="40">
                     </a>
                 </div>
             </div>
-            <img src="images/header/banner3.png" class="kanan" alt="">
+            <div class="col-md-6">
+                <img src="images/header/banner3.png" class="img-fluid">
+            </div>
         </div>
     </header>
-    <section id="best-seller" class="best-seller">
-        <h2>Menu Andalan Kami</h2>
-        <p class="sub">Nikmati Menu Andalan yang menjadi Favorit Customer Kami.</p>
-        <div class="baris">
-            <div class="produk">
-                <img src="images/produk/product_capuchino.jpg" alt="">
-                <p>Cappuchino</p>
-            </div>
-            <div class="produk">
-                <img src="images/produk/product_espresso.jpg" alt="">
-                <p>Espresso</p>
-            </div>
-            <div class="produk">
-                <img src="images/produk/product_kopi_susu.jpg" alt="">
-                <p>Kopi Susu</p>
-            </div>
-            <div class="produk">
-                <img src="images/produk/product_latte.jpg" alt="">
-                <p>Latte</p>
+    <section style="background-color: #FF725E;">
+        <div class="container text-center text-light py-4">
+            <h2>Menu Andalan Kami</h2>
+            <p>Berikut adalah Menu Andalan Kami yang menjadi Favorit Para Customer.</p>
+            <div class="row">
+                <div class="col-md-3 mb-3 mb-lg-0">
+                    <img src="images/produk/product_capuchino.jpg" class="img-thumbnail rounded" alt="">
+                    <h4>Cappuchino</h4>
+                </div>
+                <div class="col-md-3 mb-3 mb-lg-0">
+                    <img src="images/produk/product_espresso.jpg" class="img-thumbnail rounded" alt="">
+                    <h4>Espresso</h4>
+                </div>
+                <div class="col-md-3 mb-3 mb-lg-0">
+                    <img src="images/produk/product_kopi_susu.jpg" class="img-thumbnail rounded" alt="">
+                    <h4>Kopi Susu</h4>
+                </div>
+                <div class="col-md-3 mb-3 mb-lg-0">
+                    <img src="images/produk/product_latte.jpg" class="img-thumbnail rounded" alt="">
+                    <h4>Latte</h4>
+                </div>
             </div>
         </div>
     </section>
-    <section id="about-us" class="about-us">
-        <h2>Gak Ngopi Gak Kuy!</h2>
-        <p class="tentang">
-            Didirikan pada tahun 2017, Kopi Kuy merupakan sebuah startup kopi retail yang menyajikan kopi dengan
-            kualitas tinggi untuk para pelanggannya. Nama Kuy yang diambil dari "Yuk" yang merupakan harapan kami untuk
-            mengajak semua yang terlibat dalam bisnis kami untuk bersama-sama menikmati sajian kopi yang berkualitas.
-        </p>
-        <img src="images/aset_kopi_jumbo.png" alt="">
-        <p class="penjelasan">
-            Kopi dari petani pilihan, dan berkualitas tinggi diproses secara sempurna dan diteruskan oleh para barista
-            handal, yang penuh semangat dalam menyiapkan segelas kebahagiaan spesial untukmu.
-        </p>
+    <section style="background-color: #E0E0E0;">
+        <div class="container text-center py-4">
+            <h2>Gak Ngopi Gak Kuy!</h2>
+            <p>
+                Didirikan pada tahun 2017, Kopi Kuy merupakan sebuah startup kopi retail yang menyajikan kopi dengan
+                kualitas tinggi untuk para pelanggannya. Nama Kuy yang diambil dari "Yuk" yang merupakan harapan kami
+                untuk mengajak semua yang terlibat dalam bisnis kami untuk bersama-sama menikmati sajian kopi yang
+                berkualitas.
+            </p>
+            <img src="images/aset_kopi_jumbo.png" class="img-thumbnail rounded">
+            <p>
+                Kopi dari petani pilihan, dan berkualitas tinggi diproses secara sempurna dan diteruskan oleh para
+                barista handal, yang penuh semangat dalam menyiapkan segelas kebahagiaan spesial untukmu.
+            </p>
+        </div>
     </section>
-    <section id="review" class="review">
-        <h2>Apa Kata Mereka?</h2>
-        <p class="sub">
-            Kami berikan data dan fakta, karena kepuasan konsumen adalah prioritas kami.
-        </p>
-        <div class="baris">
-            <div class="testimoni">
-                <div class="profile">
-                    <img src="images/customer/customer1.jpg" alt="">
-                    <div class="titel">
-                        <h3>Benny Oktavian</h3>
-                        <p>Mahasiswa</p>
+    <section style="background-color: #455A64;">
+        <div class="container text-center py-4">
+            <h2 class="text-light">Apa Kata Mereka?</h2>
+            <p class="text-light">Kami berikan data dan fakta, karena kepuasan konsumen adalah prioritas kami.</p>
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images/customer/customer1.jpg" width="120">
+                            <h4>Benny</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, itaque quia quasi, animi
+                                fugit
+                                illo ad debitis laudantium voluptas provident cumque dolorum nostrum, incidunt eligendi?
+                                Ullam
+                                sit quae dolore amet.</p>
+                        </div>
                     </div>
                 </div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum quae vero suscipit iusto
-                    libero, dignissimos totam omnis dolor asperiores? Est, fuga voluptates molestias dolor odit possimus
-                    libero ea dolorum.
-                </p>
-            </div>
-            <div class="testimoni">
-                <div class="profile">
-                    <img src="images/customer/customer2.jpg" alt="">
-                    <div class="titel">
-                        <h3>Agus Suganda</h3>
-                        <p>Karyawan Swasta</p>
+                <div class="col-md-4 mb-3 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images/customer/customer3.jpg" width="120">
+                            <h4>Hanny</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam nulla id esse
+                                deserunt,
+                                tenetur assumenda modi sit tempora itaque ea officia quas eius! Doloribus voluptas iure
+                                dolor
+                                repellat ipsa.</p>
+                        </div>
                     </div>
                 </div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum quae vero suscipit iusto
-                    libero, dignissimos totam omnis dolor asperiores? Est, fuga voluptates molestias dolor odit possimus
-                    libero ea dolorum.
-                </p>
-            </div>
-            <div class="testimoni">
-                <div class="profile">
-                    <img src="images/customer/customer3.jpg" alt="">
-                    <div class="titel">
-                        <h3>Siti Anisa</h3>
-                        <p>Guru</p>
+                <div class="col-md-4 mb-3 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images/customer/customer7.jpg" width="120">
+                            <h4>Andy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos dignissimos ex
+                                deserunt
+                                laudantium, nemo veniam repellendus debitis, voluptas unde ipsa sunt pariatur nam culpa?
+                                Commodi
+                                quae id libero exercitationem?</p>
+                        </div>
                     </div>
                 </div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum quae vero suscipit iusto
-                    libero, dignissimos totam omnis dolor asperiores? Est, fuga voluptates molestias dolor odit possimus
-                    libero ea dolorum.
-                </p>
             </div>
         </div>
     </section>
-    <section id="contact-us" class="contact-us">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d677.7116651030628!2d106.71635865051395!3d-6.592411301864844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1680003999688!5m2!1sen!2sid"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="baris">
-            <div class="kolom">
-                <img src="images/icon/icon_phone.png" alt="">
-                <p>0812-3456-7890</p>
+    <section style="background-color: #E0E0E0;">
+        <div class="container text-center py-4">
+            <h2>Contact Us</h2>
+            <div class="card">
+                <div class="card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d677.7116651030628!2d106.71635865051395!3d-6.592411301864844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1680003999688!5m2!1sen!2sid"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        style="width: 100%; height: 400px;"></iframe>
+                </div>
             </div>
-            <div class="kolom">
-                <img src="images/icon/icon_mail.png" alt="">
-                <p>mcicih818@gmail.com</p>
-            </div>
-            <div class="kolom">
-                <img src="images/icon/icon_instagram.png" alt="">
-                <a href="#">
-                    <p>@kopi.kuy</p>
-                </a>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/icon/icon_phone.png" alt="">
+                    <p>0812-3456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/icon/icon_mail.png" alt="">
+                    <p>mcicih818@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/icon/icon_instagram.png" alt="">
+                    <a href="#">
+                        <p>@kopi.kuy</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="baris">
-            <ul class="navigasi">
-                <li>
-                    <a href="#best-seller">
-                        Best Seller
-                    </a>
-                </li>
-                <li>
-                    <a href="#our-team">
-                        Our Team
-                    </a>
-                </li>
-                <li>
-                    <a href="#review">
-                        Review
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact-us">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-            <p>&copy; 2023 Kopi Kuy. All Rights Reserved</p>
-        </div>
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2023 Kopi Kuy. All Rights Reserved
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
